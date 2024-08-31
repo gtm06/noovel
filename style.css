@@ -1,0 +1,322 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    cursor: url("assets/download.svg"), auto;
+    /* background-color: black; */
+}
+#nav{
+    height: 100px;
+    width: 100%;
+    background-color: transparent;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    transition: 1s;
+}
+#nav .nav-container{
+    height: 70px;
+    width: 90%;
+    border-radius: 50px;
+    /* background-color: blue; */
+    border: 0.1px solid #6a6a6a;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+}
+#nav .nav-container img{
+    width: 10%;
+}
+#nav .nav-container h2{
+    color: #cfcfcf;
+    font-size: 1vw;
+    font-weight: 300;
+    cursor: pointer;
+}
+.vid{
+    position: relative;
+
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    mix-blend-mode: difference;
+    z-index: -5;
+
+}
+.vid video{
+    object-fit: cover;
+    height: 70%;
+    position: fixed;
+    /* z-index: -1; */
+    /* mix-blend-mode: darken; */
+}
+#page1{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    z-index: 9;
+    display: flex;
+}
+.page1-ball{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    /* z-index: 9; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.page1-heading{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    /* z-index: 9; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+.page1-ball .diamondball{
+    height: 500px;
+    width: 700px;
+    /* background-color: red; */
+
+}
+.page1-ball .diamondball img{
+    object-fit: cover;
+    height: 300px;
+    width: 300px;
+    /* position: absolute; */
+    mix-blend-mode: difference;
+}
+.page1-heading .heading .heading1 h1{
+    /* color: rgb(143, 143, 143); */
+    background: -webkit-linear-gradient(left, #eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    font-size: 9vw;
+    font-weight: 300;
+    z-index: 99;
+    line-height: 10vw;
+    mix-blend-mode: difference;
+
+}
+.page1-heading .heading .heading2 h1{
+    /* background-color: red; */
+    font-size: 9vw;
+    font-weight: 100;
+    z-index: 99;
+    line-height: 10vw;
+    mix-blend-mode: difference;
+    text-align: right;
+    background: -webkit-linear-gradient(left, #333, #eee);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 100%;
+    margin-left: 50px;
+}
+
+#page2{
+    height: 110vh;
+    width: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#page2 .vid2{
+    /* background-color: blue; */
+    height: 90%;
+    width: 95%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#page2 .vid2 video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+
+}
+#page2 .page2-text{
+    height: 10%;
+    width: 100%;
+    /* background-color: magenta; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+#page2 h2{
+    color: #9d9d9d;
+    /* background-color: red; */
+    text-align: center;
+    font-size: 2vw;
+    font-weight: 300;
+    width: 80%;
+    line-height: 3.4vw;
+}
+#page2 h2 span{
+    color: white;
+}
+#page2 h2 span:nth-child(3){
+    font-weight: 700;
+}
+#page3{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    z-index: 9;
+    display: flex;
+    /* overflow: hidden; */
+
+  
+}
+
+#page3 .page3-left{
+    height: 100%;
+    width: 50%;
+    position: relative;
+    /* background-color: rgb(105, 192, 255); */
+}
+#page3 .page3-left img{
+    /* height: 100%; */
+    width: 100%;
+    position: absolute;
+    left: -50%;
+}
+#page3 .page3-right{
+    height: 100%;
+    width: 50%;
+    /* overflow: hidden; */
+}
+#page3 .page3-right .page3-right-section{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+}
+#page3 .page3-right .page3-right-section h1{
+    background: -webkit-linear-gradient(left, #eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 6vw;
+    font-weight: 700;
+}
+#page3 .page3-right .page3-right-section p{
+    color: rgb(214, 210, 210);
+    width: 90%;
+    font-size: 1.2vw;
+    margin-top: 30px;
+    font-weight: 300;
+    line-height: 2vw;
+}
+
+
+#page4{
+    height: 100vh;
+    width: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    z-index: 9;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  
+}
+#page4 .page4-heading{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#page4 .page4-heading h1{
+    background: -webkit-linear-gradient(left, #eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 6vw;
+    font-weight: 700;
+}
+#page4 .page4-logos{
+    height: 20%;
+    width: 200%;
+    /* background-color: firebrick; */
+    display: flex;
+}
+#page4 .page4-logos .logo-img{
+    height: 100px;
+    width: 200px;
+    /* background-color: hotpink; */
+    display: flex;
+    /* overflow: hidden; */
+    animation: slide 23s linear infinite;
+
+}
+#page4 .page4-logos .logo-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+@keyframes slide {
+    0%{
+        transform:translateX(0);
+    }
+    100%{
+        transform: translateX(-100vw)
+    }
+}
+
+#page4 .page4-bot-logos{
+    height: 30%;
+    width: 200%;
+    /* background-color: firebrick; */
+    display: flex;
+
+    position: relative;
+    transform: translateX(-50%);
+}
+#page4 .page4-bot-logos .logo-img{
+    height: 100px;
+    width: 200px;
+    /* background-color: hotpink; */
+    display: flex;
+    /* overflow: hidden; */
+    animation: slidebot 20s linear infinite;
+
+
+}
+#page4 .page4-bot-logos .logo-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+@keyframes slidebot {
+    0%{
+        transform:translateX(0);
+    }
+    100%{
+        transform: translateX(100vw)
+    }
+}
